@@ -1,13 +1,17 @@
 package com.Main;
 
+import com.array.doublepointer.DoublePointer;
 import com.query.binaryQuery.BinaryQuery;
 
 public class Main {
 
 	public static void main(String[] args) {
 		BinaryQuery binaryQuery = new BinaryQuery();
-		int[] nums = {-1,0,3,5,9,12};
-		int target = 9;
-		binaryQuery.search(nums , target );
+		DoublePointer doublePointer = new DoublePointer();
+		int[] nums = {-5,-3,-2,-1};
+		doublePointer.sortedSquares(nums);
+		for (int i = 0; i < nums.length; i++) {
+			System.out.println(nums[i]);
+		}
 	}
 }
