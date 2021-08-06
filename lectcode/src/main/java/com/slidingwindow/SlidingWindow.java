@@ -8,6 +8,6 @@ public class SlidingWindow {
 	 * https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
 	 * */
 	public int lengthOfLongestSubstring(String s) {
-
+		
     }
 }

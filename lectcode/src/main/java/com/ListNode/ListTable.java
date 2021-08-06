@@ -38,16 +38,18 @@ public class ListTable {
 		while(head ==null) {
 			return null;
 		}
-		ListNode p = head;
+		ListNode first = new ListNode();
+		first.next = head;
+		ListNode p = first;
 		ListNode last = p;
 		for (int i = 0; i < n; i++) {
 			last = last.next;
 		}
 		while(last!=null && last.next!=null) {
-			p = p.next;
 			last = last.next;
+			p = p.next;
 		}
 		p.next = p.next.next;
-		return head;
+		return first.next;
     }
 }
